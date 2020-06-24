@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+
+<style>
+    body {font-family: sans-serif;}
+
+    h1 {
+        font-weight: 200px;
+        text-align: center;
+        color: #f0e;
+        font-size: 72px;
+
+    }
+
+    h1:hover {
+        /* This allows you to color text with gradient. */
+        background: -webkit-linear-gradient(#f0e, #f90);
+        /* Specifies where the background should be. The background will now be on the text. */
+        -webkit-background-clip: text;
+        /* Makes the text transparent. */
+        -webkit-text-fill-color: transparent;
+    }
+
+    .Center {
+        text-align: center;
+        margin: auto;
+    }
+
+    .SearchBar {
+        text-align: center;
+        width: 300px;
+    }
+
+    .SearchBar input {
+        height: 30px;
+        width: 300px;
+    }
+
+    #google-search {
+        border: 100px #DDDDDD;
+        color: gray;
+        border-radius: 3px;
+        background-color: #DDDDDD;
+        font-size: 15px;
+        position: absolute;
+        top: 24vh;
+        left: 43vw;
+    }
+    
+    #lucky-search {
+        border: 100px #DDDDDD;
+        color: gray;
+        border-radius: 3px;
+        background-color: #DDDDDD;
+        font-size: 15px;
+        position: absolute;
+        top: 24vh;
+        right: 43vw;
+    }
+    #nav-left {
+        position: absolute;
+        top: 2vh;
+        left: 2vw;
+        display: inline;
+    }
+    
+    #nav-right {
+        position: absolute;
+        top: 2vh;
+        left: 85vw;
+        display: inline;
+    }
+
+    .InlineLists li {display: inline;}
+
+    a {
+        color: gray;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: gray;
+        text-decoration: underline;
+    }
+</style>
+
+<!-- metadata, background stuff -->
+<header>
+
+</header>
+
+<!-- What shows up on the page -->
+<body>
+    <nav id=nav-left class=InlineLists>
+        <ul>
+            <li> <a href="#">About</a></li>
+            <li style="margin-left: 40px;"> <a href="#">Store</a></li>
+        </ul>
+    </nav>
+    <nav id=nav-right class=InlineLists>
+        <ul>
+            <li> <a href="#">Gmail</a></li>
+            <li style="margin-left: 40px"> <a href="#">Images</a></li>
+        </ul>
+    </nav>
+    <h1>Google</h1>
+
+    <form class="Center">
+        <input type=text style="text-align: left;" class="SearchBar"></input> </br>
+        <button type=submit style="text-align: center;" id=google-search>Google Search</button>
+    </form>
+
+    <form class="Center">
+        <button type=submit style="text-align: center;" id=lucky-search>I'm Feeling Lucky</button>
+    </form>
+</body>
