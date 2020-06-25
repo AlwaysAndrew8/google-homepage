@@ -20,6 +20,37 @@
         -webkit-text-fill-color: transparent;
     }
 
+    #h1-anim {
+        animation-name: colorful;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes colorful {
+        0%, 100% {
+            /* This allows you to color text with gradient. */
+            background: -webkit-linear-gradient(#f0e, #fb0);
+            /* Specifies where the background should be. The background will now be on the text. */
+            -webkit-background-clip: text;
+            /* Makes the text transparent. */
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            top: 0px;
+        }
+        50% {
+            opacity: .5;
+            font-weight: 100px;
+            /* This allows you to color text with gradient. */
+            background: -webkit-linear-gradient(#000, #fff);
+            /* Specifies where the background should be. The background will now be on the text. */
+            -webkit-background-clip: text;
+            /* Makes the text transparent. */
+            -webkit-text-fill-color: transparent;
+            font-size: 72px;
+            position: relative;
+            top: 50px;
+        }
+    }
+
     .Center {
         text-align: center;
         margin: auto;
@@ -81,6 +112,7 @@
         color: gray;
         text-decoration: underline;
     }
+
 </style>
 
 <!-- metadata, background stuff -->
@@ -102,7 +134,7 @@
             <li style="margin-left: 40px"> <a href="#">Images</a></li>
         </ul>
     </nav>
-    <h1>Google</h1>
+    <h1 id=h1-anim>Google</h1>
 
     <form class="Center">
         <input type=text style="text-align: left;" class="SearchBar"></input> </br>
